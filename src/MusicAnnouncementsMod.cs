@@ -56,7 +56,7 @@ namespace MusicAnnouncements
 			}
 			if (name.StartsWith("BM_")) // Background music. (E.g. 'BM_CC_CANOPY')
 			{
-				return;
+				SongToAnnounce = String.Concat("Background: ", Regex.Replace(name, "_", " "));
 			}
 			if (self.GetType() != typeof(Song)) // Skip over other types of music too. (Ending cutscenes, music pearl, etc.)
 			{

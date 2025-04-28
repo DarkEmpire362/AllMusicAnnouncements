@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RWDir>$(HOME)/.local/share/Steam/steamapps/common/Rain World/</RWDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="$(RWDir)/BepInEx/utils/PUBLIC-Assembly-CSharp.dll"></Reference>
+    <Reference Include="$(RWDir)/RainWorld_Data/Managed/UnityEngine.dll"></Reference>
+    <Reference Include="$(RWDir)/RainWorld_Data/Managed/UnityEngine.CoreModule.dll"></Reference>
+    <Reference Include="$(RWDir)/RainWorld_Data/Managed/UnityEngine.InputLegacyModule.dll"></Reference>
+    <Reference Include="$(RWDir)/BepInEx/core/BepInEx.dll"></Reference>
+    <Reference Include="$(RWDir)/BepInEx/plugins/HOOKS-Assembly-CSharp.dll"></Reference> 
+    <Reference Include="$(RWDir)/BepInEx/core/MonoMod.RuntimeDetour.dll"></Reference>
+    <Reference Include="$(RWDir)/BepInEx/core/MonoMod.Utils.dll"></Reference> 
+  </ItemGroup>
+</Project>
